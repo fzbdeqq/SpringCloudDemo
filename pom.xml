@@ -20,6 +20,7 @@
         <module>circuit-breaker-reading</module>
         <module>loadbalancer-server</module>
         <module>loadbalancer-client</module>
+        <module>loadBalancer-client-ribbon</module>
     </modules>
 
     <properties>
