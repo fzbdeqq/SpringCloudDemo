@@ -18,6 +18,8 @@
         <module>filtering-gateway</module>
         <module>circuit-breaker-bookstore</module>
         <module>circuit-breaker-reading</module>
+        <module>loadbalancer-server</module>
+        <module>loadbalancer-client</module>
     </modules>
 
     <properties>
@@ -30,7 +32,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+            <version>1.18.12</version>
+        </dependency>
 
 
         <dependency>
@@ -95,6 +102,7 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <optional>true</optional>
+                <version>1.18.12</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
