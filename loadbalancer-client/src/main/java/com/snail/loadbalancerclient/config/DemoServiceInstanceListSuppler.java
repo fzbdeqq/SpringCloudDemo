@@ -27,7 +27,7 @@ public class DemoServiceInstanceListSuppler implements ServiceInstanceListSuppli
 
     @Override
     public Flux<List<ServiceInstance>> get() {
-        //请求实例（server端，端口8090、1、2）
+        //请求实例（server端，端口8090、1、2）  轮训、随机、权重
         return Flux.just(
                 Arrays.asList(
                 new DefaultServiceInstance(serviceId+"1",serviceId,"localhost",8090,false),
